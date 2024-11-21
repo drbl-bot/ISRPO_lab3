@@ -1,0 +1,24 @@
+{
+  "name": "text-translator",
+  "displayName": "Text Translator",
+  "description": "Перевод английских букв в русские в выделенном тексте.",
+  "version": "1.0.0",
+  "engines": {
+      "vscode": "^1.78.0"
+  },
+  "activationEvents": [
+      "onCommand:text-translator.translate"
+  ],
+  "main": "./extension.js",
+  "contributes": {
+    "keybindings": [
+      {
+            "command": "text-translator.translate",
+            "key": "shift+tab",
+            "when": "editorTextFocus"
+        }
+    ]
+},
+
+  "dependencies": {}
+}
